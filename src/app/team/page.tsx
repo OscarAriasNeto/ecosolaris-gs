@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Team: React.FC = () => (
+const Team: React.FC = () => {
+    return(
   <section>
     <h1>Conheça nossa equipe</h1>
     <ul>
@@ -10,5 +11,6 @@ const Team: React.FC = () => (
     </ul>
   </section>
 );
+}
 
 export default Team;
