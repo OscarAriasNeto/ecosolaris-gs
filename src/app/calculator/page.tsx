@@ -5,12 +5,12 @@ const Calculator: React.FC = () => {
     const [economy, setEconomy] = useState<string | null>(null);
   
     const calculateEconomy = async () => {
-      try {
-        const response = await axios.post('https://sua-api.com/calculate', { panels });
-        setEconomy(response.data.economy);
-      } catch (error) {
-        console.error('Erro ao calcular economia:', error);
-      }
+    //   try {
+    //     const response = await axios.post('https://sua-api.com/calculate', { panels });
+    //     setEconomy(response.data.economy);
+    //   } catch (error) {
+    //     console.error('Erro ao calcular economia:', error);
+    //   }
     };
   
     return (
