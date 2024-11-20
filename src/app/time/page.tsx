@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Team: React.FC = () => {
+const Time: React.FC = () => {
     return(
   <section>
     <h1>Conheça nossa equipe</h1>
@@ -13,4 +13,4 @@ const Team: React.FC = () => {
 );
 }
 
-export default Team;
+export default Time;
