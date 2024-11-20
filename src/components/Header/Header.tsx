@@ -7,27 +7,27 @@ const Header: React.FC = () => {
       <nav className="container mx-auto flex justify-between items-center py-4">
         <ul className="flex space-x-6">
           <li>
-            <Link href="/" className="hover:text-gray-400">
+            <Link href="/" className="hover:text-gray-400 transition-colors">
               Home
             </Link>
           </li>
           <li>
-            <Link href="/calculator" className="hover:text-gray-400">
-              Calculadora/Economia
+            <Link href="/economia" className="hover:text-gray-400 transition-colors">
+              Economia
             </Link>
           </li>
           <li>
-            <Link href="/team" className="hover:text-gray-400">
+            <Link href="/time" className="hover:text-gray-400 transition-colors">
               Time
             </Link>
           </li>
           <li>
-            <Link href="/register" className="hover:text-gray-400">
+            <Link href="/registrar" className="hover:text-gray-400 transition-colors">
               Registrar
             </Link>
           </li>
           <li>
-            <Link href="/login" className="hover:text-gray-400">
+            <Link href="/login" className="hover:text-gray-400 transition-colors">
               Login
             </Link>
           </li>
