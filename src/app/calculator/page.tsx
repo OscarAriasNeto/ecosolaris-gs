@@ -29,7 +29,7 @@ const Calculator: React.FC = () => {
   const calculateEnergy = () => {
     const regionFactor = regions[selectedRegion]; // kWh/kW/day
     const totalPower = (selectedPanel.power / 1000) * panelsCount; // kW
-    const annualEnergy = totalPower * regionFactor * 365; // kWh/year
+    const annualEnergy = totalPower * regionFactor * 30; // kWh/year
 
     setEnergyProduced(annualEnergy.toFixed(2));
   };
@@ -78,6 +78,12 @@ const Calculator: React.FC = () => {
       </div>
 
       <button onClick={calculateEnergy}>Calcular Produção</button>
+
+      {energyProduced && (
+        <p>
+          Produção mensal estimada: <strong>{energyProduced} kWh</strong>
+        </p>
+      )}
     </section>
   );
 };
