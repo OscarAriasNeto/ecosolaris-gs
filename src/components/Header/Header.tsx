@@ -3,8 +3,8 @@ import React from 'react';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-green-800 text-white fixed top-0 w-full shadow-md z-50">
-      <nav className="container mx-auto flex justify-between items-center py-4">
+    <header className="bg-green-800 text-white fixed top-0 w-full shadow-md z-50 mx-auto" >
+      <nav className="container w-full mx-auto flex justify-between items-center py-4">
         <ul className="flex space-x-6">
           <li>
             <Link href="/" className="hover:text-gray-400 transition-colors">
