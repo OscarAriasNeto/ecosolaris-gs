@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 interface Panel {
@@ -41,7 +42,7 @@ const Economia: React.FC = () => {
         <h1 className="text-4xl font-bold text-center mb-8">
           Economize e gere energia com a EcoSolaris!
         </h1>
-        <p className="text-lg leading-relaxed text-justify">
+        <p className="text-lg leading-relaxed text-justify mb-8">
           A EcoSolaris oferece uma linha de painéis solares de última geração, pensada para atender às suas necessidades de economia e sustentabilidade. Com opções como o{" "}
           <strong>Canadian Solar HiKu</strong>, que combina eficiência e durabilidade, o inovador{" "}
           <strong>JA Solar DeepBlue</strong>, projetado para maior geração de energia mesmo em dias nublados, e o{" "}
@@ -53,13 +54,21 @@ const Economia: React.FC = () => {
           <br />
           <strong>EcoSolaris – Onde economia e sustentabilidade se encontram.</strong>
         </p>
+
+        {/* Botão de navegação */}
+        <div className="text-center">
+          <Link href="/disponibilidade" className="bg-green-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring focus:ring-green-300">
+          Disponibilidade dos nossos produtos
+          </Link>
+        </div>
       </section>
 
       {/* Calculadora */}
       <section className="bg-white py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold
-          text-center mb-6">Calculadora de Produção de Energia</h2>
+          <h2 className="text-3xl font-bold text-center mb-6">
+            Calculadora de Produção de Energia
+          </h2>
           <p className="text-lg text-gray-600 text-center mb-8">
             Descubra o quanto você pode economizar com nossos painéis solares!
           </p>
