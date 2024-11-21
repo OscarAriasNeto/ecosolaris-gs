@@ -2,8 +2,8 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Primeira seção: Bem-vindo */}
-      <section className="h-screen bg-green-800 text-white flex items-center justify-center">
-        <h1 className="text-4xl md:text-6xl font-bold text-center">
+      <section className="h-screen  text-white flex items-center justify-center bg-homebackground bg-no-repeat bg-cover">
+        <h1 className="text-4xl md:text-6xl font-bold text-center bg-black bg-opacity-45 p-2 rounded-full px-4">
           Bem vindo à EcoSolaris
         </h1>
       </section>
