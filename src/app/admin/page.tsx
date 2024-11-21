@@ -82,7 +82,7 @@ const Admin: React.FC = () => {
 
   return (
     <main className="min-h-screen bg-gray-50 py-12 px-4">
-      <h1 className="text-4xl font-bold text-green-800 text-center mb-8">
+      <h1 className="text-4xl font-bold text-green-800 text-center mb-8 mt-10">
         Administração de Produtos
       </h1>
 
@@ -180,7 +180,7 @@ const Admin: React.FC = () => {
           {products.map((product) => (
             <div
               key={product.id}
-              className="bg-white shadow-md rounded-lg p-6 text-center"
+              className="bg-white shadow-md rounded-lg p-6 text-center mb-10"
             >
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
                 {product.name}

@@ -24,7 +24,7 @@ const Time: React.FC = () => {
 
   return (
     <section className="min-h-screen bg-gray-50 py-12">
-      <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
+      <h1 className="text-4xl font-bold text-center text-gray-800 mb-12 mt-10">
         Conheça nossa equipe
       </h1>
       <div className="container mx-auto flex justify-center items-center space-x-12">
