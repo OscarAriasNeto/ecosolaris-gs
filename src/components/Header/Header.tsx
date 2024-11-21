@@ -7,6 +7,9 @@ const Header: React.FC = () => {
       <nav className="container w-full mx-auto flex justify-between items-center py-4">
         <ul className="flex space-x-6">
           <li>
+          <Link href="/admin" className="hover:text-gray-400 transition-colors">
+              Admin
+            </Link>
             <Link href="/" className="hover:text-gray-400 transition-colors">
               Home
             </Link>
