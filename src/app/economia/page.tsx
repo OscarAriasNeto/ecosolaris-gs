@@ -14,9 +14,9 @@ const Economia: React.FC = () => {
     { name: "Trina Solar Vertex", power: 450 },
   ];
 
-  const regions = {
+  const regions: Record<string, number> = {
     "São Paulo - Capital": 4.2,
-    "Campinas": 4.5,
+    Campinas: 4.5,
     "São José dos Campos": 4.7,
   };
 
