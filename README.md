@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+---
+marp: true
+theme: default
+paginate: true
+---
 
-## Getting Started
+# 🌞 Bem-vindo ao EcoSolaris!
+Nome e RM dos integrantes
+Oscar Arias Neto - Rm556936
+Julia Martins Rebelles - Rm554516
 
-First, run the development server:
+**EcoSolaris** é uma plataforma inovadora para explorar, calcular e gerenciar soluções de energia solar. Descubra nossos produtos, calcule sua economia e administre informações facilmente com nossas ferramentas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Funcionalidades do Site
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Página Inicial**  
+   🌟 Apresentação da empresa e seus valores.  
+   ➡️ *"Bem-vindo à EcoSolaris!"*: Descubra como a energia solar pode transformar sua casa ou empresa.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Economia**  
+   🧮 Uma calculadora de economia intuitiva:  
+   - Escolha um modelo de painel solar.  
+   - Informe sua localização e quantidade de painéis.  
+   - Receba estimativas de produção de energia mensal.
 
-## Learn More
+3. **Disponibilidade dos Produtos**  
+   📋 Lista detalhada dos produtos disponíveis, incluindo:  
+   - Nome do modelo.  
+   - Disponibilidade (em estoque, sob encomenda, etc.).  
+   - Voltagem e preço.
 
-To learn more about Next.js, take a look at the following resources:
+4. **Administração (Admin)**  
+   👩‍💼 Para usuários administrativos:  
+   - Adicione novos produtos.  
+   - Edite informações de produtos existentes.  
+   - Exclua produtos quando necessário.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📜 Como Usar o Site
 
-## Deploy on Vercel
+### 1️⃣ Página Inicial
+➡️ Navegue para a **Home** e conheça a proposta da EcoSolaris.  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Clique em "**Economia**" para explorar nossa calculadora.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+### 2️⃣ Economia
+➡️ Na calculadora:  
+1. Selecione um **modelo de painel solar**.  
+2. Escolha sua **localização** no menu suspenso.  
+3. Informe a **quantidade de painéis** que deseja instalar.  
+4. Clique em **"Calcular Produção"** para obter sua estimativa.
+
+---
+
+### 3️⃣ Disponibilidade
+➡️ Navegue até a página de **Disponibilidade** para:  
+- Conferir os produtos disponíveis.  
+- Obter detalhes sobre modelos, voltagem, e preços.
+
+---
+
+### 4️⃣ Administração (Admin)
+**Somente para usuários autorizados.**  
+➡️ Na página **Admin**, você pode:  
+1. **Adicionar um novo produto** preenchendo as informações do formulário.  
+2. **Editar um produto existente** clicando no botão "Editar".  
+3. **Excluir um produto** clicando no botão "Excluir".
+
+💾 Todas as alterações são salvas diretamente no banco de dados.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **Next.js**: Framework principal.  
+- **React**: Biblioteca para criação de interfaces.  
+- **Tailwind CSS**: Estilização rápida e responsiva.  
+- **Marp**: Para esta apresentação estilizada.
+
+---
+
+## 📂 Estrutura do Projeto
+
+- **pages/**:  
+  - `index.tsx`: Página inicial.  
+  - `economia.tsx`: Calculadora de economia.  
+  - `disponibilidade.tsx`: Produtos disponíveis.  
+  - `admin.tsx`: Gerenciamento de produtos.
+
+- **components/**:  
+  - Componentes reutilizáveis, como o Header e Footer.
+
+- **api/**:  
+  - Integração com o backend para gerenciar produtos.
+
+---
+
+## 📩 Contato
+
+**EcoSolaris**  
+🌐 Site oficial: [www.ecosolaris.com](#)  
+📧 E-mail: contato@ecosolaris.com  
+📞 Telefone: +55 11 99999-9999
