@@ -10,6 +10,8 @@ const Header: React.FC = () => {
           <Link href="/admin" className="hover:text-orange-400 transition-colors">
               Admin
             </Link>
+          </li>
+          <li>
             <Link href="/" className="hover:text-orange-400 transition-colors">
               Home
             </Link>

@@ -46,7 +46,7 @@ const Disponibilidade: React.FC = () => {
   }, []);
 
   return (
-    <main className="min-h-screen bg-gray-50 py-12 px-4">
+    <main className="min-h-screen bg-gray-50 py-20 px-4">
       <h1 className="text-4xl font-bold text-green-800 text-center mb-8">
         Disponibilidade dos nossos produtos
       </h1>

@@ -16,7 +16,7 @@ const Economia: React.FC = () => {
 
   const regions = {
     "São Paulo - Capital": 4.2,
-    Campinas: 4.5,
+    "Campinas": 4.5,
     "São José dos Campos": 4.7,
   };
 
@@ -38,7 +38,7 @@ const Economia: React.FC = () => {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* Texto introdutório */}
-      <section className="container mx-auto px-4 py-12 text-gray-800">
+      <section className="container mx-auto px-4 py-20 text-gray-800">
         <h1 className="text-4xl font-bold text-center mb-8">
           Economize e gere energia com a EcoSolaris!
         </h1>
