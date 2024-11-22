@@ -16,32 +16,17 @@ const Disponibilidade: React.FC = () => {
   useEffect(() => {
     // Substitua pelo fetch de sua API/banco
     const fetchProducts = async () => {
-      const mockData: Product[] = [
-        {
-          name: "Canadian Solar HiKu",
-          availability: "Em estoque",
-          voltage: "330W",
-          price: "R$ 1.200,00",
-          id: 1,
-        },
-        {
-          name: "JA Solar DeepBlue",
-          availability: "Sob encomenda",
-          voltage: "400W",
-          price: "R$ 1.500,00",
-          id: 2,
-        },
-        {
-          name: "Trina Solar Vertex",
-          availability: "Esgotado",
-          voltage: "450W",
-          price: "R$ 1.800,00",
-          id: 3,
-        },
-      ];
-      setProducts(mockData);
-    };
+      try {
+        const response = await fetch('/api/produtos');
+        const data =  await response.json()
+        console.log("data", data)
+        setProducts(data);
+    } catch (error) {
+        console.log(error)
+    }
+  };
 
+    
     fetchProducts();
   }, []);
 

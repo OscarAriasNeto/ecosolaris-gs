@@ -10,36 +10,28 @@ interface Product {
 }
 
 const Admin: React.FC = () => {
-  const [products, setProducts] = useState<Product[]>([]);
   const [form, setForm] = useState<Partial<Product>>({});
   const [editingId, setEditingId] = useState<number | null>(null);
 
   // Função para carregar produtos existentes (simulação de dados iniciais)
+  const [products, setProducts] = useState<Product[]>([]);
+
+  // Simulação de dados vindo de um banco de dados
   useEffect(() => {
-    const mockData: Product[] = [
-      {
-        id: 1,
-        name: "Canadian Solar HiKu",
-        availability: "Em estoque",
-        voltage: "330W",
-        price: "R$ 1.200,00",
-      },
-      {
-        id: 2,
-        name: "JA Solar DeepBlue",
-        availability: "Sob encomenda",
-        voltage: "400W",
-        price: "R$ 1.500,00",
-      },
-      {
-        id: 3,
-        name: "Trina Solar Vertex",
-        availability: "Esgotado",
-        voltage: "450W",
-        price: "R$ 1.800,00",
-      },
-    ];
-    setProducts(mockData);
+    // Substitua pelo fetch de sua API/banco
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch('/api/produtos');
+        const data =  await response.json()
+        console.log("data", data)
+        setProducts(data);
+    } catch (error) {
+        console.log(error)
+    }
+  };
+
+    
+    fetchProducts();
   }, []);
 
   // Função para lidar com o envio do formulário
