@@ -9,7 +9,7 @@ interface Product {
   id: number;
 }
 
-const Disponibilidade: React.FC = () => {
+const Disponibilidades: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
 
   // Simulação de dados vindo de um banco de dados
@@ -48,7 +48,7 @@ const Disponibilidade: React.FC = () => {
               <strong>Disponibilidade:</strong> {product.availability}
             </p>
             <p className="text-lg text-gray-600">
-              <strong>Voltagem:</strong> {product.voltage}
+              <strong>Voltagem:</strong> {product.voltage + "W"}
             </p>
             <p className="text-lg text-gray-600">
               <strong>Preço:</strong> {product.price}
@@ -60,4 +60,4 @@ const Disponibilidade: React.FC = () => {
   );
 };
 
-export default Disponibilidade;
+export default Disponibilidades;
