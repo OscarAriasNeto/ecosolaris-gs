@@ -1,24 +1,23 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Time: React.FC = () => {
   const team = [
     {
-      name: "João Silva",
-      role: "Engenheiro",
+      name: "Oscar Arias Neto",
+      RM: "Rm556936",
       email: "joao.silva@ecosolaris.com",
-      image: "/path/to/image1.jpg",
+      image: "/oscar.png",
+      linkedin: "https://www.linkedin.com/in/oscar-neto-b9aaab250/",
+      github: "https://github.com/OscarAriasNeto"
     },
     {
-      name: "Maria Oliveira",
-      role: "Especialista em Vendas",
+      name: "Julia Martin Rebelles",
+      RM: "Rm554516",
       email: "maria.oliveira@ecosolaris.com",
-      image: "/path/to/image2.jpg",
-    },
-    {
-      name: "Carlos Santos",
-      role: "Suporte Técnico",
-      email: "carlos.santos@ecosolaris.com",
-      image: "/path/to/image3.jpg",
+      image: "/julia.png",
+      linkedin: "http://www.linkedin.com/in/julia-martins-rebelles-34b17a211",
+      github: "https://github.com/JuliaRebelles05"
     },
   ];
 
@@ -48,13 +47,15 @@ const Time: React.FC = () => {
               <h2 className="text-lg font-semibold text-gray-700">
                 {member.name}
               </h2>
-              <p className="text-gray-500">{member.role}</p>
-              <a
-                href={`mailto:${member.email}`}
-                className="text-blue-500 hover:underline"
-              >
-                {member.email}
-              </a>
+              <p className="text-gray-500">{member.RM}</p>
+            </div>
+            <div className='space-x-5'>
+              <Link href={member.linkedin} className="text-blue-500 hover:underline ">
+          Linkedin
+          </Link>
+          <Link href={member.github} className="text-blue-500 hover:underline">
+          Github
+          </Link>
             </div>
           </div>
         ))}
