@@ -4,7 +4,7 @@ export default function Home() {
       {/* Primeira seção: Bem-vindo */}
       <section className="h-screen  text-white flex items-center justify-center bg-homebackground bg-no-repeat bg-cover">
         <h1 className="text-4xl md:text-6xl font-bold text-center bg-black bg-opacity-45 p-2 rounded-full px-4">
-          Bem vindo à EcoSolaris
+          Bem vindo à <span className="text-[#9BBB59]">Eco</span><span className="text-[#FFA347]">Solaris</span>
         </h1>
       </section>
 
